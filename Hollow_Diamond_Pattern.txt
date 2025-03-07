@@ -1,0 +1,79 @@
+Print Hollow Diamond Pattern 
+Print a hollow diamond pattern using '*'. See examples for more details.
+
+
+
+Input Format
+
+The first line of input contains T - the number of test cases. It is followed by T lines, each line contains a single odd integer N - the size of the diamond.
+
+
+
+Output Format
+
+For each test case, print the test case number as shown, followed by the diamond pattern, separated by a new line.
+
+
+
+Constraints
+
+1 <= T <= 100
+
+3 <= N <= 201
+
+
+
+Example
+
+Input
+
+4
+3
+7
+5
+15
+
+
+Output
+
+Case #1:
+ *
+* *
+ *
+Case #2:
+   *
+  * *
+ *   *
+*     *
+ *   *
+  * *
+   *
+Case #3:
+  *
+ * *
+*   *
+ * *
+  *
+Case #4:
+       *
+      * *
+     *   *
+    *     *
+   *       *
+  *         *
+ *           *
+*             *
+ *           *
+  *         *
+   *       *
+    *     *
+     *   *
+      * *
+       *
+
+
+Explanation
+
+
+
+Self Explanatory

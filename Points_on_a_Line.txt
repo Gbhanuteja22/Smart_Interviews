@@ -1,0 +1,50 @@
+Points on a Line 
+Given 3 points on a 2D plane, check if they can be connected by using a single straight line.
+
+
+
+Input Format
+
+First line of the input contains T - the number of test cases. Its followed by 3T lines, each line contains 2 integers x and y, representing the coordinates of the 3 points respectively.
+
+
+
+Output Format
+
+For each test case, print "Yes" if they can be connected by using a single straight line, print "No" otherwise, separated by newline.
+
+
+
+Constraints
+
+1 <= T <= 105
+
+-106 <= x,y <= 106
+
+
+
+Example
+
+Input
+
+1
+
+1 1
+
+2 2
+
+3 3
+
+
+
+Output
+
+Yes
+
+
+
+Explanation
+
+
+
+Self Explanatory

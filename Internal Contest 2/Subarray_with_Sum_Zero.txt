@@ -1,0 +1,38 @@
+Subarray with Sum Zero 
+Given an array, find the length of the longest subarray whose sum is 0.
+
+Input Format
+The first line of input contains T - the number of test cases. It is followed by 2T lines. The first line of each test case contains N - size of the array. The second line contains N space separated integers - elements of the array.
+
+Output Format
+For each test case, print the length of the longest subarray whose sum is 0, separated by a newline.
+
+Constraints
+30 points
+1 <= T <= 100
+1 <= N <= 1000
+-1000 <= ar[i] <= 1000
+
+70 points
+1 <= T <= 500
+1 <= N <= 10000
+-1000 <= ar[i] <= 1000
+
+Example
+Input
+3
+5
+-3 5 2 -3 1
+10
+-1 4 10 -3 15 -8 -10 30 -12 9
+5
+1 5 3 10 19
+
+Output
+3
+4
+0
+
+Explanation
+
+Self Explanatory

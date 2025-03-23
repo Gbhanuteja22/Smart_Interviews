@@ -1,0 +1,1 @@
+Always split a string in half and count number of perfect strings possible from them

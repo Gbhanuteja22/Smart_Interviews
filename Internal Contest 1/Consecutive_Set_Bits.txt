@@ -1,0 +1,1 @@
+Count max of number of consecutive 1's of a number

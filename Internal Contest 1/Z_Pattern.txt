@@ -1,0 +1,1 @@
+Traverse a matriz in z pattern and print its elements accordingly

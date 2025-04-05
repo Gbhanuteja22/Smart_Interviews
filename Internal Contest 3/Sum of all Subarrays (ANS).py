@@ -5,5 +5,5 @@ for _ in range(int(input())):
 
     sum = 0
     for i in range(n):
-        sum += l[i]*(i-1)*(n+1)
+        sum += l[i]*(i+1)*(n-i)
     print(l)

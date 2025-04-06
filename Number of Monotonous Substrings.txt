@@ -1,0 +1,39 @@
+Number of Monotonous Substrings
+Given a string S, print the number of monotonous substrings of S. Since the answer may be too large, print answer modulo 1e9 + 7. A string is monotonous if all the characters of the string are the same.
+
+Input Format
+The first line of input will contain a single integer T, denoting the number of test cases. The first line of each test case contains an integer N - denoting the size of string.
+The second line of each test case contains the string S consisting of lowercase characters.
+
+Output Format
+Print the number of monotonous substrings of S.
+
+Constraints
+20 points
+1 <= N <= 102
+
+30 points
+1 <= N <= 103
+
+50 points
+1 <= N <= 105
+
+General Constraints
+1 <= T <= 100
+'a' <= S[i] <= 'z'
+
+Example
+Input
+2
+8
+abbcccaa
+4
+aaaa
+
+Output
+13
+10
+
+Explanation
+
+Self Explanatory

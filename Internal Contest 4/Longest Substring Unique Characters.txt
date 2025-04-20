@@ -1,0 +1,44 @@
+Longest Substring Unique Characters 
+Find the longest substring in the given string A that consists of unique characters, without considering case sensitivity.
+
+Input Format
+First line of input contains T - number of test cases. Its followed by T lines, each line contains a string of size N, containing capital letters.
+
+Output Format
+For each test case, print the length of the longest substring of unique characters, separated by newline.
+
+Constraints
+30 points
+1 <= T <= 100
+1 <= len(A) <= 103
+
+70 points
+1 <= T <= 100
+1 <= len(A) <=106
+
+General Constraints
+'a' <= A[i] <= 'z'
+'A' <= A[i] <= 'Z
+
+Example
+Input
+3
+SMARTintERVIEWS
+ABCDDEF
+Blimps
+
+Output
+7
+4
+6
+
+Explanation
+
+Test Case 1
+We have a substring of length 7 which contains only unique characters: "SMARTin"
+
+Test Case 2
+We have a substring of length 4 which contains only unique characters: "ABCD"
+
+Test Case 3
+We have a substring of length 6 which contains only unique characters: "Blimps"

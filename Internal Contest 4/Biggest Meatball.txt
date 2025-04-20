@@ -1,0 +1,28 @@
+Biggest Meatball 
+Bhojon Restaurant is hiring a "meatball artist" to meet the high demand for meatballs. Each applicant brings a meatball of a specific weight, added to a queue (seekh). Each day, a fixed quantity D (day’s quantity) is cut from the front meatball. If the remaining weight of a meatball is positive, it goes to the back of the queue; if zero or less, it’s removed. This continues until only one meatball remains. Find the 1 - based index of the person whose meatball is served at the last.
+
+Input Format
+The first line of input contains T - number of test cases. It is followed by 2T lines. The first line of each test case contains N and D. The next line contains N space separated integers that represent the ith person's meatball weight.
+
+Output Format
+For each test case, print the 1 - based index of the person whose meatball is served at the last.
+
+Constraints
+1 <= T <= 104
+1 <= N, D <= 103
+0 <= A[i] <= 103
+
+Example
+Input
+1
+4 2
+7 8 9 3
+
+Output
+3
+
+Explanation
+
+The seekh or meatball queue has [7 8 9 3] distribution. At the first serving, they will cut 2 kgs of meatball from the first meatball and add it to the last of the seekh, so after 1st time it is: [8 9 3 5]
+Then, it is: [9 3 5 6], [3 5 6 7], [5 6 7 1], [6 7 1 3], [7 1 3 4], [1 3 4 5], [3 4 5], [4 5 1], [5 1 2], [1 2 3], [2 3], [3], [1], [0]
+So the last served meatball belongs to the 3rd person.

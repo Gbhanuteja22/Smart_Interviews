@@ -1,0 +1,35 @@
+Range of Primes
+Given a range A to B, both inclusive, you have to find the number of prime numbers in that range.
+
+Input Format
+The first line of input contains T - the number of test cases. It's followed by T lines, each line contains 2 numbers - A and B.
+
+Output Format
+For each test case, print the number of primes in the given range, separated by newline.
+
+Constraints
+30 points
+1 <= T <= 1000
+1 <= A <= B <= 104
+
+70 points
+1 <= T <= 106
+1 <= A <= B <= 106
+
+Example
+Input
+4
+1 10
+5 11
+232 542
+54 6421
+
+Output
+4
+3
+50
+819
+
+Explanation
+
+Self-Explanatory

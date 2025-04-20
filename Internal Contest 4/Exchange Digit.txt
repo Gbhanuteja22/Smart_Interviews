@@ -1,0 +1,26 @@
+Exchange Digit 
+Given 2 numbers A and B, find the smallest number greater than B by interchanging the digits of A and if not possible print -1.
+
+Input Format
+The first line of input contains T - number of test cases. It is followed by T lines. Each line contains 2 integers A and B.
+
+Output Format
+For each test case, print a single number greater than B. If not possible, print -1.
+
+Constraints
+1 <= T <= 100
+0 <= A, B <= 107
+
+Example
+Input
+2
+459 500
+645757 457765
+
+Output
+549
+465577
+
+Explanation
+
+Self Explanatory

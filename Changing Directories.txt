@@ -1,0 +1,52 @@
+Changing Directories
+Zack is learning Operating Systems. He came across the following commands:
+cd - changes the location of the working directory, and
+pwd - display the present working directory
+
+If the cd parameter contains "..", that means you have to step back one directory. The path of directories is separated by slashes "/". The default root directory is "/". Your task is to print the current working directory, for each "pwd" command.
+
+Input Format
+The first line of input contains T - the number of test cases. For each test case, the first line of input contains N - number of commands. It is followed by N lines, each containing either a "cd <path>" or a "pwd" command. Each "cd" command will end with a "/".
+
+Output Format
+For each "pwd" command, print the present working directory, separated by a new line. Print a newline between the output of test cases.
+
+Constraints
+1 <= T <= 100
+1 <= N <= 100
+1 <= len(path) <= 200
+path[i] ∈ ('a' - 'z', '.', '/')
+
+Example
+Input
+2
+8
+pwd
+cd /Users/Guest/
+pwd
+cd ../Admin/Desktop/
+pwd
+cd /Users/Guest/Desktop/
+cd os/labs/
+pwd
+6
+cd /sem/networks/labs/
+pwd
+cd ../../os/labs/../slides/
+pwd
+cd /
+pwd
+
+Output
+/
+/Users/Guest/
+/Users/Admin/Desktop/
+/Users/Guest/Desktop/os/labs/
+
+/sem/networks/labs/
+/sem/os/slides/
+/
+
+Explanation
+
+﻿Self Explanatory

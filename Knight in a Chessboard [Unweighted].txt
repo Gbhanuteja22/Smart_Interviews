@@ -1,0 +1,34 @@
+Knight in a Chessboard [Unweighted]
+
+Note: A Knight cannot go out of the chessboard.
+
+Input Format
+The first line of input contains T - the number of test cases. First line of each test case contains (A,B) - size of the chessboard, (C,D) - Source point of the Knight, (E,F) - Destination point of the Knight.
+
+Output Format
+Print the minimum number of steps for the Knight to move to the Destination point, if not possible print -1.
+
+Constraints
+1 <= T <= 1000
+1 <= A, B <= 500
+1 <= C, E <= A
+1 <= D, F <= B
+
+Example
+Input
+2
+6 6 5 4 1 1
+5 7 2 3 5 6
+
+Output
+3
+2
+
+Explanation
+Test Case 1:
+﻿
+The size of the chessboard is 6x6, The Knight is initially at (5,4) and the Knight wants to reach position (1,1). The minimum number of moves required for this is 3, as shown above.
+
+Test Case 2:
+
+The size of the chessboard is 5x7. The Knight is initially at (2,3) and the Knight wants to reach position (5,6). The minimum number of moves required for this is 2, as shown above.

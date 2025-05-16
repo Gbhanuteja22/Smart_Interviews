@@ -1,0 +1,14 @@
+n=int(input())
+arr=list(map(int,input().split()))
+final=1
+score=sum(arr)
+if(score%2==0):
+    flag=0
+else:
+    flag=1
+if(n//6)%2!=0:
+    flag+=1
+if(flag%2==0):
+    print("Kohli")
+else:
+    print("ABD")

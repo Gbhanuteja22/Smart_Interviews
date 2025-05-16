@@ -1,0 +1,34 @@
+The Substring Game
+A Substring game has two characters: Sherlock and Watson. As usual, Watson wants to test the skills of Mr. Sherlock. Watson gives Sherlock a string (let's denote it by S). Watson calculates all the substrings of S in his favourite order. According to the Watson's favourite order, all the substrings starting from first character of the string will occur first in the sorted order of their length, followed by all the substrings starting from the second character of the string in the sorted order of their length, and so on.
+Suppose the given string is "abc", i.e, S = abc. Then, all the substrings of S as per Watson's favourite order are:aababcbbccThe game is pretty simple. Watson will ask Sherlock 'q' questions. In each question, Watson will give Sherlock a number and Sherlock has to speak the substring on that number. If there is no possible substring, then Sherlock has to speak -1.
+Note: Sherlock has to follow Watson's favourite order. See the example test-case for more understanding.
+
+Input Format
+The first line of input consist of a string 'S'. The second line of input consist of an integer 'q', number of questions Watson ask. The next line consists of 'q' space-separated numbers.
+
+Output Format
+For all the 'q' questions, output the required answer, in a new line.
+
+Constraints
+1 <= |S| <= 105
+1 <= q <= 103
+1 <= number <= 1018
+S ∈ ['a', 'z']
+
+Example
+Input
+abc
+2
+2 9
+
+Output
+ab
+-1
+
+Explanation
+
+Test Case-1:
+Watson gives Sherlock a number 2. We have substring "ab" on number 2. So output "ab"(without quotes).
+
+Test Case-2:
+Watson gives Sherlock a number 9. We don't have any substring on number 9. So output "-1" (without quotes).

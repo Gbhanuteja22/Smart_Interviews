@@ -1,0 +1,43 @@
+Longest Increasing Path in a Matrix
+Given a matrix of integers, find the length of the longest strictly increasing path in matrix. You can move from each cell in four possible directions: left, right, up, or down. Diagonal movements and out-of-bound movements are not allowed.
+
+Input Format
+The first line of input contains T - number of test cases. The first line of each test case contains N, M - size of the matrix. It is followed by N lines each containing M integers.
+
+Output Format
+For each test case, print the length of the longest strictly increasing path in matrix, separated by new line.
+
+Constraints
+50 points
+1 <= T <= 10
+1 <= N, M <= 3
+
+100 points
+1 <= T <= 103
+1 <= N, M <= 100
+
+General Constraints
+0 <= mat[i][j] <= 109
+
+Example
+Input
+2
+3 3
+6 3 6
+7 3 5
+8 4 1
+2 3
+9 7 8
+18 9 6
+
+Output
+4
+3
+
+Explanation
+
+Test Case-1:
+The longest strictly increasing path is [3, 6, 7, 8].
+
+Test Case-2:
+The longest strictly increasing path is [7, 9, 18] or [6, 9, 18].

@@ -1,0 +1,41 @@
+IPL Match
+In a cricket match between RCB and CSK, RCB won the toss and elected to bat first. The opening batsmen for RCB are ABD and Virat Kohli. The match is currently in the (X+1)th over, with Y balls already bowled, and Kohli is about to face the (Y+1)th ball.
+
+You are given an array A of size (6*X+Y), which contains information (scores obtained) of all the balls bowled from the 1st over 1st ball to the (X+1)th over Yth ball. Each element of the array represents the score obtained by the batsman on that ball. The possible values of A[i] are {0,1,2,3,4,6}. Each over consists of 6 balls, and when a player hits a boundary (4 or 6) or takes 2 runs, they remain on strike. When a player takes 1 or 3 runs, the opposite person will be on strike. After an over is completed, the strike will change.
+
+Your task is to determine which batsman faced the first ball of the match. If it was Virat, print "Kohli"; otherwise, print "ABD".
+
+Input Format
+First line of input contains an integer N - size of array A. The second line contains elements of array A separated by a space.
+
+Output Format
+Print the batsman's name who faced the first ball of the match.
+
+Constraints
+1 <= N <= 120
+
+Example
+Input 1
+4
+2 4 0 1
+
+Output 1
+ABD
+
+Input 2
+14
+1 1 6 0 4 1 4 6 6 3 2 0 4 3
+
+Output 2
+ABD
+
+Input 3
+1
+0
+
+Output 3
+Kohli
+
+Explanation
+
+Self Explanatory

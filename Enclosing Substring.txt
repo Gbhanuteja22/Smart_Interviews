@@ -1,0 +1,51 @@
+Given 2 strings A and B, find the smallest substring of B having all the characters of A, in any order.
+
+Input Format
+The first line of input contains T - the number of test cases. It's followed by T lines, each line containing 2 space-separated strings - A and B.
+
+Output Format
+For each test case, print the length of the smallest substring of B having all the characters of A, separated by newline. If no such substring is found, print -1.
+
+Constraints
+20 points
+1 <= T <= 100
+1 <= size(A), size(B) <= 100
+
+60 points
+1 <= T <= 100
+1 <= size(A), size(B) <= 1000
+
+120 points
+1 <= T <= 100
+1 <= size(A), size(B) <= 10000
+
+General Constraints
+'a' <= A[i], B[i] <= 'z'
+
+Example
+Input
+4
+fkqyu frqkzkruqmfqyuzlkyg
+onmwvytbytn uqhmfjaqtgngcwkuzyamnerphfmw
+bloets lwbcrsfothplxseplrtbshbtstjloxsf
+dzpd dclzztpjldkndgbdqqzmbp
+
+Output
+7
+-1
+13
+9
+
+Explanation
+
+Test Case 1:
+The smallest substring containing all characters of A is "fqyuzlk", which has a length of 7.
+
+Test Case 2:
+Despite considering all possible substrings of B, we cannot find any substring containing all characters of A.
+
+Test Case 3:
+The smallest substring containing all characters of A is "bcrsfothplxse", which has a length of 13.
+
+Test Case 4:
+The smallest substring containing all characters of A is "ztpjldknd", which has a length of 9.

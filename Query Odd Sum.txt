@@ -1,0 +1,47 @@
+Query Odd Sum
+Given an array of integers and Q queries, each query contains three integers l, r and K. For each query, if we change all elements in the range Al, Al+1,…, Ar of the array to K, check if the sum of the entire array will be odd. If the sum is odd then print YES along with sum, else NO.
+
+Note: The queries are independent and do not affect future queries.
+
+Input Format
+The first line of input contains T - the number of test cases.
+The second line of the input contains N - size of an array and Q - number of queries. The third line contains N - array elements.
+Next Q lines consists of three integers l, r, K.
+
+Output Format
+For each query print "YES" if the sum of the entire array becomes odd along with sum, and "NO" otherwise, separated by a newline.
+
+Constraints
+30 points
+1 <= N, Q <= 103
+1 <= K <= 103
+
+70 points
+1 <= N, Q <= 105
+1 <= K <= 106
+
+General Constraints
+1 <= T <= 100
+1 <= Ai <= 104
+0 <= l <= r < N
+
+Example
+Input
+1
+5 3
+2 2 1 3 2
+1 2 3
+1 2 4
+0 3 9
+
+Output
+YES 13
+YES 15
+NO
+
+Explanation
+
+Given array [2,2,1,3,2]
+Q1 : [2,3,3,3,2], sum = 13, which is odd
+Q2 : [2,4,4,3,2], sum = 15, which is odd
+Q2 : [9,9,9,9,2], sum = 38, which is even

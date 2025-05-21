@@ -1,0 +1,36 @@
+Optimal Prime Game
+Two people are playing a game of numbers! The rules of the game are:The game is played on a given number N.The players take turns one by one. During each move, the current player can subtract a number p from N, where p is a prime number p<=N.The game ends when a player cannot make a move. The first player to have no available move loses the game.
+Given the value of N, determine whether the person who wins the game is the first or second person to move. Assume both players move optimally.
+
+Input Format
+The first line of input contains T - the number of test cases. It's followed by T lines, each line contains a single integer N.
+
+Output Format
+For each test case, print the name of the winner, separated by newline.
+
+Constraints
+30 points
+1 <= T <= 100
+1 <= N <= 100
+
+70 points
+1 <= T <= 104
+1 <= N <= 104
+
+Example
+Input
+4
+10
+5
+3
+25
+
+Output
+Second
+First
+First
+Second
+
+Explanation
+
+Self Explanatory

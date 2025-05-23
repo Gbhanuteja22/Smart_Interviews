@@ -1,0 +1,43 @@
+Smart Problem Solving
+Given a list of questions where question[i] = [pointsi, smarti]. The list describes the questions of an assignment, where you have to process the questions in sequence (i.e., starting from question 0). At every question you have to make a decision to either skip it or solve it. You will earn pointsi by solving question i but you will be unable to solve each of the next smarti questions. If you skip question i, you get to make the decision on the next question. Print the maximum points you can earn from the assignment.
+
+Input Format
+The first line of input contains T - number of test cases. The first line of each test case contains N - number of questions. The next N lines will contain pointsi and smarti, separated by space.
+
+Output Format
+For each test case, print the maximum points you can earn from the assignment, separated by newline.
+
+Constraints
+30 points
+1 <= T <= 100
+1 <= N <= 20
+
+70 points
+1 <= T <= 1000
+1 <= N <= 104
+
+General Constraints
+1 <= pointsi <= 100
+
+Example
+Input
+2
+5
+3 3
+5 3
+4 4
+3 4
+3 5
+3
+3 2
+1 3
+4 6
+
+Output
+6
+4
+
+Explanation
+
+Test Case 1:
+The maximum points can be earned by solving questions 0 and 4. Solve question 0, earn 3 points and we are unable to solve the next 3 questions. Solve question 4, earn 3 points. Total points earned are 3 + 3 = 6. There is no other way to earn 6 or more points.

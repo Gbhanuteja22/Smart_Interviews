@@ -1,0 +1,39 @@
+Forbidden Skipping
+Given an array, find the maximum possible sum of elements by choosing a subsequence in which you cannot skip consecutive elements of the array. It means, in your chosen subsequence, if you skip ith element, you cannot skip (i-1)th and (i+1)th elements of the array.
+
+Input Format
+First line of input contains T - number of test cases. Its followed by 2T lines, the first line contains N - the size of the array and the second line contains the elements of the array.
+
+Output Format
+For each test case, print the maximum possible sum, separated by newline.
+
+Constraints
+1 <= T <= 103
+1 <= N <= 104
+-103 <= arr[i] <= 103
+
+Example
+Input
+3
+5
+1 2 3 4 5
+5
+1 2 -3 4 5
+5
+1 2 -3 -4 5
+
+Output
+15
+12
+5
+
+Explanation
+
+Test Case 1:
+The subsequence which gives maximum sum without skipping consecutive elements is [1,2,3,4,5] .
+
+Test Case 2:
+The subsequence which gives maximum sum without skipping consecutive elements is [1,2,4,5] .
+
+Test Case 3:
+The subsequence which gives maximum sum without skipping consecutive elements is [1,2,-3,5] .

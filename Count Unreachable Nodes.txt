@@ -1,0 +1,41 @@
+Count Unreachable Nodes
+You are given an undirected, unweighted simple graph. Count the number of pairs of different nodes that are unreachable from each other.
+
+Input format
+The first line of input contains an integer T - number of test cases. The first line of each test case contains N - number of vertices and M - number of edges in the graph.
+Its followed by M lines, each contains a pair (u,v) - denoting an undirected edge between node u and node v.
+
+Output format
+For each test case, print the number of pairs of different nodes that are unreachable from each other, separated by newline.
+
+Constraints
+1 <= T <= 100
+1 <= N <= 105
+0 <= M <= 105
+1 <= u, v <= N
+
+Example
+Input Format
+2
+6 5
+1 2
+2 3
+3 4
+4 1
+5 6
+3 3
+1 2
+1 3
+2 3
+
+Output Format
+8
+0
+
+Explanation
+
+Test Case 1:
+There are 8 pairs of nodes that are unreachable from each other: [1,5], [1,6], [2,5], [2,6], [3,5], [3,6], [4,5], [4,6].
+
+Test Case 2:
+There are no pairs that are unreachable.

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Interviews - Programming Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Smart Interviews</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#problems" class="nav-link" data-section="problems">Problems</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contests" class="nav-link" data-section="contests">Contests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tasks" class="nav-link" data-section="tasks">Task Manager</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <h1>Welcome to Smart Interviews</h1>
+                    <p>A comprehensive collection of programming solutions and coding interview preparation materials.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3 id="problem-count">0</h3>
+                            <p>Problems Solved</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 id="contest-count">0</h3>
+                            <p>Contests</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 id="language-count">0</h3>
+                            <p>Languages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section id="problems" class="section">
+            <div class="container">
+                <h2>Programming Problems</h2>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search problems...">
+                    <select id="language-filter">
+                        <option value="">All Languages</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="txt">Text</option>
+                    </select>
+                </div>
+                <div class="problems-grid" id="problems-grid">
+                    <!-- Problems will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contests Section -->
+        <section id="contests" class="section">
+            <div class="container">
+                <h2>Contest Problems</h2>
+                <div class="contests-container">
+                    <div class="contest-category">
+                        <h3>Internal Contests</h3>
+                        <div class="contest-list" id="internal-contests">
+                            <!-- Internal contest problems will be loaded here -->
+                        </div>
+                    </div>
+                    <div class="contest-category">
+                        <h3>Final Contest</h3>
+                        <div class="contest-list" id="final-contests">
+                            <!-- Final contest problems will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task Manager Section -->
+        <section id="tasks" class="section">
+            <div class="container">
+                <h2>Task Manager</h2>
+                <div class="task-manager">
+                    <div class="task-input-section">
+                        <h3>Add New Task</h3>
+                        <div class="task-form">
+                            <input type="text" id="task-input" placeholder="Enter a new task...">
+                            <select id="task-priority">
+                                <option value="low">Low Priority</option>
+                                <option value="medium">Medium Priority</option>
+                                <option value="high">High Priority</option>
+                            </select>
+                            <button id="add-task-btn" class="btn-primary">Add Task</button>
+                        </div>
+                    </div>
+                    
+                    <div class="task-filters">
+                        <button class="filter-btn active" data-filter="all">All Tasks</button>
+                        <button class="filter-btn" data-filter="pending">Pending</button>
+                        <button class="filter-btn" data-filter="completed">Completed</button>
+                        <button class="filter-btn" data-filter="high">High Priority</button>
+                    </div>
+
+                    <div class="task-list" id="task-list">
+                        <!-- Tasks will be dynamically added here -->
+                    </div>
+
+                    <div class="task-stats">
+                        <span>Total: <span id="total-tasks">0</span></span>
+                        <span>Pending: <span id="pending-tasks">0</span></span>
+                        <span>Completed: <span id="completed-tasks">0</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Smart Interviews. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for problem details -->
+    <div id="problem-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Problem details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
